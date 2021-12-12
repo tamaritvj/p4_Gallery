@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web de Porfolio de C.Anderson</title>
+    <link href="<link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style type="text/css">
+    /*PREDEFINICIONES*/
+    :root{
+        --b_oscur: #264653;
+        --b_clar: #2A9D8F;
+        --groc: #E9C46A;
+        --t_clar: #F4A261;
+        --t_oscur: #E76F51;
+        --g_clar: #F5F5F5;
+        --g_oscur: #E0E0E0;
+        --lora: 'Lora', serif;
+        --ibm_plex_sans: 'IBM Plex Sans', sans-serif;
+        --bold: 700;
+        --semibold: 600;
+        --medium: 500;
+        --regular: 400;
+        }
+    html{
+        font-size: 32px;
+        }    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+    a{
+        text-decoration: none;
+        color: var(--b_oscur);
+        font-weight: var(--semibold);
+        margin-left: 10px;
+        margin-right: 10px;
+        }
+    ul li{
+        list-style-type: none;
+        }
+
+    /*TAMAÑO SECCIONES IMAGENES E SOBRE MI-TAMAÑO DE CLIENTES ESPECIFICADO DESPUÉS*/
+    section{
+        height: 100%;
+        }  
+
+    /*CABECERA DE LA PÁGINA*/
+    body>header{
+        background-color: var(--g_oscur);  
+        height: 12.5vh;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        }
+    #capcalera{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 10px 0 10px;
+        }
+    hgroup{
+        display: flex;
+        flex-direction: column;
+        } 
+    nav{
+        font-family: var(--lora);
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 25px;        
+        }
+    h1{
+        font-family: var(--lora);
+        font-weight: 700;
+        color: var(--b_oscur);
+        font-size: 1em;
+        justify-content: center;
+        padding-top: 0px;
+        } 
+    blockquote{
+        font-family: var(--lora);
+        font-weight: 500;
+        font-size: large;
+        color: var(--b_oscur);
+        font-size: 0.5em;
+        }
+
+    /*MAIN>SECTION>IMATGES*/   
+    h3{
+        font-family: var(--lora);
+        font-size: 16px;
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+        padding-bottom: 0.5em; 
+        font-weight: var(--medium);
+        } 
+    .container{
+    display: flex;
+    flex-direction: column; 
+    padding-left: 5%;
+    padding-right: 5%;
+    /* justify-content: end;   */
+    /* padding: 0 2em;    */
+        
+        }
+    .cover{
+        padding: 1.5em;
+        /* max-width: 300px; */
+        width: 200px;
+        height: 300px;
+        margin: 0.5em;
+        display: flex; 
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-between;
+        background-color: white;
+        }
+    .cover_img{
+        /* width: 100%; */
+        width: 100%;
+        height: 200px; 
+        margin-bottom: -50px;
+        /* overflow: hidden; */
+        object-fit: cover;
+        object-position: center;
+        /* overflow: hidden; */
+        display: flex;
+        flex-grow: 1; 
+        }
+        
+    .cover_img img{
+        object-fit: cover;
+        object-position: center;
+        }
+    img{
+    width: 100%;
+    height: auto;
+        } 
+    .titulets h4{
+        font-family: var(--lora);
+        font-weight: var(--regular);
+        background-color: var(--g_oscur);
+        margin-top: 40px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        color: var(--b_oscur)
+        }
+    #Imatges{
+        background-color: var(--g_clar);
+        font-size: 0.5em;
+        display: flex;
+        flex-direction: row;
+        }
+    #totes{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        order: 20px;
+        flex-grow: 1;
+    }
+
+    
+     
+    /*MAIN>SECTION>SOBREMI*/
+    #biografiatitul {
+        font-size: 16px;
+        font-family: var(--lora);
+        font-weight: var(--semibold);
+        color: white;
+        margin-bottom: 10px;
+    }
+    
+    #chrisanderson blockquote{
+        font-family: var(--lora);
+        font-weight: var(--regular);
+        color: black;
+        margin-left: 0px;
+        width: 100%;
+        }
+    #sobremi{
+        background-color: var(--b_oscur);
+        }
+    
+    #containersobremi {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        margin-top: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 50px;
+        }
+    #img_sobremi {
+        width: 500%;
+        height: 500%;
+        margin-right: 1em;
+        }
+    
+    #sobremi blockquote{
+        color: var(--g_clar);
+        }
+
+    /*MAIN>SECTION>CLIENTES*/
+    h5{
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+        padding-bottom: 0.5em; 
+        font-family: var(--lora);
+        font-size: 16px;
+        font-weight: var(--medium);
+        color: black;
+    }
+    #Clientes{
+        background-color: var(--g_oscur);
+        height: 10em;
+    }  
+    .cover_img2{
+        /* width: 100%; */
+        width: 100%;
+        height: 200px; 
+        /* margin-bottom: -50px; */
+        /* overflow: hidden; */
+        object-fit: cover;
+        object-position: center;
+        /* overflow: hidden; */
+        display: flex;
+        flex-grow: 1;
+        /* border: 20 20 20 20;
+        border-style: solid;
+        border-radius: 100px;  */
+        }
+    .bordelogos{
+        border: 20 20 20 20;
+        border-style: none;
+        border-radius: 600px; 
+    }
+    #totesclientes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* border-radius: 5px; */
+        gap: 50px;
+        }
+    /* .coverclientes>.cover_img{
+        height: ;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        border-radius: 10%;
+    } */
+
+    #totesclientes h4{
+        font-family: var(--lora);
+        font-size: 16px;
+        font-weight: var(--medium);
+        text-align: center;
+    }
+    
+      
+
+    /*FOOTER REDS SOCIALS*/  
+    footer{
+        font-family: var(--ibm_plex_sans);
+        font-size: 24px;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*SECCIÓ CLIENTES*/
+    .cover_img2 img{
+        width: 150px;
+        height: 150px;
+        /* padding-bottom: 50px; */
+        margin-bottom: 15px;
+        
+    }
+    .cover_img2{
+        width: fit-content;
+        height: fit-content;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+
+    }
+    .coverclientes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    }
+    #cites{
+        width: 250px; 
+        text-align: center;
+    }
+    </style>
+    </head>
+
+    <body>
+    <header>
+    <div id="capcalera">
+        <hgroup>
+        <h1>Christopher Anderson | Porfolio</h1>
+        <blockquote>
+        Muestra de los trabajos fotográficos del fotógrafo estadounidense
+        </blockquote>
+        </hgroup>
+    <nav id="pagineslinks">        
+            <a href="#Imatges">IMÁGENES</a>
+            <a href="#sobremi">BIOGRAFÍA</a>
+            <a href="#Clientes">CLIENTES</a>
+    </nav>
+    </div>
+
+    </header>
+
+        
+    <main>
+        <section id="Imatges">
+            <div class="container">
+            <h3>Imágenes</h3>
+            <div id="totes">
+            <!-- <div class="subtotes"> -->
+            <div class="cover">
+                <div class="cover_img">
+                    <img src="img/Barbudocongafas.jpeg" alt="">
+                </div>
+                <header class="titulets">
+                    <h4>El señor Li</h4>
+                </header>
+            </div>
+            <div class="cover">
+                <div class="cover_img">
+                    <img src="img/Colores foto calle.jpg" alt="">
+                </div>
+                <header class="titulets">
+                    <h4>Reflejos</h4>
+                </header>
+            </div>
+            <div class="cover">
+                <div class="cover_img">
+                    <img src="img/Cuerpo.jpeg" alt="">
+                </div>
+                <header class="titulets">
+                    <h4>Piel</h4>
+                </header>
+            </div>
+            <div class="cover">
+                <div class="cover_img">
+                    <img src="img/Globo rojo.jpg" alt="">
+                </div>
+                <header class="titulets">
+                    <h4> La ilusión</h4>
+                </header>
+            </div>
+            <div class="cover">
+                <div class="cover_img">
+                    <img src="img/Hijo.jpeg" alt="">
+                </div>
+                <header class="titulets">
+                    <h4>Mirada joven</h4>
+                </header>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="subtotes"> -->
+            <div class="cover">
+                <div class="cover_img">
+                    <img src="img/Japonesa.jpeg" alt="">
+                </div>
+                <header class="titulets">
+                    <h4>Nostalgia</h4>
+                </header>
+            </div>
+            <div class="cover">
+                <div class="cover_img">
+                    <img src="img/Retrato bn.jpeg" alt="">
+                </div>
+                <header class="titulets">
+                    <h4>Mirada</h4>
+                </header>
+            </div>
+            <div class="cover">
+                <div class="cover_img">
+                    <img src="img/Retrato chica.jpg" alt="">
+                </div>
+                <header class="titulets">
+                    <h4>Claire</h4>
+                </header>
+            </div>
+            <div class="cover">
+                <div class="cover_img">
+                    <img src="img/Retrato con edificios.jpeg" alt="">
+                </div>
+                <header class="titulets">
+                    <h4>En bucle</h4>
+                </header>
+            </div>
+            <div class="cover">
+                <div class="cover_img">
+                    <img src="img/Señora bcn.jpg" alt="">
+                </div>
+                <header class="titulets">
+                    <h4>La tía Matilda</h4>
+                </header>
+            </div>
+            </div> 
+            </div>
+        </section>
+        <section id="sobremi">
+        <div class="container">
+
+            
+            <div id="containersobremi">
+                <div id="img_sobremi">
+                    <img src="img/nn11472268-scaled.jpg" alt="">
+                </div>
+                <header id="chrisanderson">
+                    <h4 id="biografiatitul">Biografía</h4>
+                <blockquote>Christopher Anderson nació en Canadá en 1970 y se crió en el oeste de Texas. Logró el primer reconocimiento por sus fotografías en 1999, cuando se subió a un barco hecho a mano con unos refugiados haitianos que intentaban navegar hasta América. El barco, llamado el Believe In God (creer en Dios), se hundió en el Caribe. En 2000 las imágenes de ese viaje recibieron la Medalla de Oro Robert Capa. También marcaron el surgimiento de un estilo cargado de emociones al que Anderson se refiere como «documental experimental» y que ha llegado a caracterizar su obra desde entonces.
+
+                    Christopher es miembro de Magnum Photos y actualmente es el primer fotógrafo residente de la Nueva York Magazine. Es el autor de dos monografías: Nonfiction, publicado en 2003 y CAPITOLIO, publicado en 2009 por RM y nombrado uno de los mejores libros de fotografía de 2009/10 en la Feria del Libro de fotos Kassel en Alemania. En mayo de 2012, publicoó su tercer libro, Bleu Blanc Rouge y SON saldrá a la venta en la primavera de 2013.
+                    
+                    Este último trabajo es el más íntimo de todos los que ha realizado hasta el momento. Surge cuando enferma su padre y a su vez él mismo se convierte en padre con la llegada de su primer hijo. Anderson siente la necesidad de retratar a su familia de una forma casi orgánica y el resultado es magnífico.</blockquote>
+                </header>
+            </div>
+    
+            </div>
+        </div>
+
+        </section>
+    <section id="Clientes">
+        <div class="container">
+        <h5>Clientes</h5>
+        <div id="totesclientes">
+            <!-- <div class="subtotes"> -->
+            <div class="coverclientes">
+                <div class="cover_img2">
+                    <img class="bordelogos" src="img/MP_Positive_Logo_RGB.png" alt="">
+                </div>
+                <header class="tituletsclientes">
+                    <h4>Agencia Magnum</h4>
+                    <blockquote id="cites">"Anderson representa la excelencia y el compromiso"</blockquote>
+                </header>
+            </div>
+            <div class="coverclientes">
+                <div class="cover_img2">
+                    <img class="bordelogos" src="img/New_York_Times_logo_variation copia.jpg" alt="">
+                </div>
+                <header class="tituletsclientes">
+                    <h4>The New York Times</h4>
+                    <blockquote id="cites">"Sabe captar el momento con mucha objetividad"</blockquote>
+                </header>
+            </div>
+            <div class="coverclientes">
+                <div class="cover_img2">
+                    <img class="bordelogos" src="img/NIKE_logo.jpg" alt="">
+                </div>
+                <header class="tituletsclientes">
+                    <h4>Nike</h4>
+                    <blockquote id="cites">"No hay duda, Anderson es una apuesta segura"</blockquote>
+                </header>
+            </div>
+        
+        </div>
+    </section>
+</main>
+<footer>
+    <h6><a href="https://twitter.com/oh_anderson">twitter</a></h6>
+    <h6><a href="https://www.instagram.com/christopherandersonphoto/?hl=es">instagram</a></h6>
+    <h6><a href="https://www.facebook.com/christopherandersonphoto">facebook</a></h6>
+</footer>
+
+    
+</body>
+</html>
